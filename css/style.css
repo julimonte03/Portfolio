@@ -209,6 +209,7 @@ header .nav-links li a{
 /* MEDIA QUERIES */
 @media screen and (max-width:550px) {
     .abrir-menu{
+        color:black;
         display: block;
         margin-right: 10px;
         border: 0;
