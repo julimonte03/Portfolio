@@ -79,7 +79,6 @@ header .nav-links li a{
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 .hero .hero-contenedor .hero-texto{
     margin-top: 100px;
@@ -119,12 +118,61 @@ header .nav-links li a{
     height: 100%;
     border-radius: 10%;
 }
+.info-section{
+    background-color: #eceeeea8;
+}
+.info-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+.info-contenedor h2{
+    color: #258390;
+    margin: 50px;
+    font-size: 30px;
+}
+.info-contenedor .icons{
+flex-direction: row;
+}
+.info-contenedor .img{
+    font-size: 40px;
+    color: #258390;
+    margin: 30px;
+}
+.info-contenedor h3{
+    margin: 30px;
+    font-size: 25px;
+}
+.img-contenedor{
+    width: 50vh;
+    height: 50vh;
+}
+.img-contenedor img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.info-contenedor .info{
+    background-color: white;
+    box-shadow: 1px 1px 23px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 1px 1px 23px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 23px -3px rgba(0,0,0,0.75);
+    margin: 30px;
+    width: 70%;
+    height: 70%;
+}
+.info-contenedor .info p{
+    margin: 20px;
+    font-size: 20px;
+}
 .skills-contenedor{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 10px;
+    padding:50px;
 }
 .skills-contenedor div h2{
     font-size: 22px;
@@ -165,45 +213,14 @@ header .nav-links li a{
 .skills-contenedor .skills-icons .git{
     margin-right: 5px;
 }
-.info-section{
-    margin-top: 80px;
-    background-color: #eceeeea8;
-}
-.info-contenedor {
+.projects{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center; 
+    justify-content: center;
+    text-align: center;
 }
-.info-contenedor h2{
-    margin: 25px;
-    font-size: 30px;
-}
-.info-contenedor h3{
-    margin: 30px;
-    font-size: 25px;
-}
-.img-contenedor{
-    width: 50vh;
-    height: 50vh;
-}
-.img-contenedor img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10%;
-}
-.info-contenedor .info{
-    background-color: white;
-    box-shadow: 1px 1px 23px -3px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 1px 1px 23px -3px rgba(0,0,0,0.75);
-    -moz-box-shadow: 1px 1px 23px -3px rgba(0,0,0,0.75);
-    margin: 30px;
-    width: 70%;
-    height: 70%;
-}
-.info-contenedor .info p{
-    margin: 40px;
-    font-size: 20px;
+.projects h2{
+    padding: 40px;
 }
 /* FOOTER */
 /* MEDIA QUERIES */
@@ -220,6 +237,7 @@ header .nav-links li a{
     }
     .cerrar-menu{
         display: block;
+        margin-top: 10px;
         margin-right: 29px;
         border: 0;
         border-radius:20%;
@@ -244,7 +262,7 @@ header .nav-links li a{
         box-shadow: 0 0 0 100vmax rgba(0,0,0, .5);
     }
     .nav.visible{
-        transition:ease 0.3s;
+        transition:ease-in-out 0.3s;
         opacity: 1;
         visibility: visible;
     }
@@ -261,6 +279,12 @@ header .nav-links li a{
     }
     header .logo h1{
         margin-left: 10px;
+    }
+}
+@media screen and (max-width:550px) {
+    .hero .hero-contenedor{
+        background-image: linear-gradient(#030303bf,rgba(35, 35, 35, 0.75)),
+        url(../img/foto-compu.jpg);
     }
 }
 @media screen and (max-width:550px) {
