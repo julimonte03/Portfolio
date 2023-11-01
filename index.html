@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -21,9 +22,9 @@
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
             <ul class="nav-links">
-                <li><a href="#">HOME</a></li>
+                <li><a href="./index.html">HOME</a></li>
                 <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PROYECTS</a></li>
+                <li><a href="#">PROJECTS</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
@@ -38,10 +39,10 @@
             </div>
         </section>
         <section class="info-section">
-            <div class="info-contenedor">
+            <div class="info-contenedor" data-aos="fade-up">
                     <h2>Who am I?</h2>
                     <div class="img-contenedor"><img src="./img/WhatsApp Image 2023-04-11 at 15.23.51.jpg" alt="Foto Julian Monte   "></div>
-                    <div class="info">
+                    <div class="info" data-aos="fade-up">
                         <h3>An Enthusiastic Full Stack Developer <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 14 14"><g fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5V1.5a1 1 0 0 1 1-1h8.5a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H11m-8-7h10.5"/><rect width="8" height="6" x=".5" y="7.5" rx="1"/><path d="M.5 10h8"/></g></svg></h3>
                         <div class="icons">
                             <a href="https://www.linkedin.com/in/julian-monte-10806b213/" target="blank"><i class="bi bi-linkedin img"></i></a>
@@ -54,7 +55,7 @@
                             
                             In my spare time, I'm an avid reader, fitness enthusiast, and I thoroughly enjoy delving into technology and research. I believe that finding inner peace is essential for efficient and organized work.</p></div>
             </div>
-            <div class="skills-contenedor">
+            <div class="skills-contenedor" data-aos="fade-up">
                 <div>
                     <h2>Knowledge and Skills</h2>
                 </div>
@@ -78,6 +79,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     <script src="./js/main.js"></script>
 </body>
 </body>
