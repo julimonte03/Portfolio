@@ -275,13 +275,18 @@ flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
+    height: 50%;
+}
+.proyectos-contenedor .proyecto .foto-web svg{
+    margin-left: 170px;
+    margin-top: 10px;
 }
 .proyectos-contenedor .proyecto .foto-web img{
     border-radius: 1em;
     padding: 20px;
-    width: 100%;
-    height: 100%;
+    max-width: 100%; /* Establece un ancho máximo del 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
 }
 /* FOOTER */
 /* MEDIA QUERIES */
@@ -358,5 +363,23 @@ flex-direction: row;
     }
     .info-contenedor .info p{
         font-size: 15px;
+    }
+    .proyectos-contenedor{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    }
+    .proyectos-contenedor .proyecto{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    flex-direction: column;
+    width: 60vh;
+    height: 80vh;
+    margin: 40px;
+    }
+    .proyectos-contenedor .proyecto .foto-web svg{
+        margin-left: 190px;
+        margin-top: 10px;
     }
 }
