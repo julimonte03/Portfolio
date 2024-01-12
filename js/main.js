@@ -5,10 +5,10 @@ const header = document.querySelector("header");
 
 abrir.addEventListener("click", () => {
     nav.classList.add("visible");
-    header.style.overflow = "visible"; // Mostrar contenido desbordado
+    header.style.overflow = "visible"; 
 });
 
 cerrar.addEventListener("click", () =>{
     nav.classList.remove("visible");
-    header.style.overflow = "hidden"; // Ocultar contenido desbordado
+    header.style.overflow = "hidden"; 
 })
